@@ -1,0 +1,59 @@
+.experience-wrapper{
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-wrapper::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 105%;
+    background-color: var(--primary-color);
+}
+
+/* experience item */
+.experience-item{
+    display: flex;
+    justify-content: end;
+    margin-top: 32px;
+    width: 100%;
+    position: relative;
+}
+
+.experience-item-icon{
+    position: absolute;
+    left: -20px;
+    padding: 13px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.experience-item-content{
+    padding: 24px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.experience-title{
+    font-weight: 500!important;
+}
+
+.experience-time{
+    font-size: 24px;
+}
+
+.experience-item-btn{
+    margin-top: 20px;
+}
+
+.experience-item-content li{
+    margin-top: 8px;
+}
+

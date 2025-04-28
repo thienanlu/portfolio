@@ -1,0 +1,36 @@
+.certification-item{
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    background-color: var(--background-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.certification-item > img{
+    display: block;
+    margin-right: 20px;
+}
+
+.certification-details{
+    padding: 24px;
+}
+
+.certification-name{
+    font-weight: 500;
+    color: var(--heading-color);
+    margin-bottom: 20px;
+}
+
+.certification-score{
+    font-weight: 600;
+}
+
+.certification-details > p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.certification-details > a{
+    display: inline-block;
+}

@@ -1,0 +1,14 @@
+.project-category{
+    margin-top: 40px;
+    padding: 0;
+}
+
+.project-item{
+    position: relative;
+}
+
+.project-item > img{
+    object-fit: contain;
+    width: 100%;
+    height: 400px;
+}

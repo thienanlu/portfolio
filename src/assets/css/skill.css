@@ -1,0 +1,24 @@
+.skill-item-gallery{
+    padding: 0;
+    margin-top: 32px;
+}
+
+.skill-item{
+    background-color: #fff;
+    text-align: center;
+    padding: 24px 0;
+    border-radius: 16px;
+    margin-top: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.skill-item i{
+    font-size: 32px;
+}
+
+.skill-item p{
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
