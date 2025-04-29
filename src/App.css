@@ -100,3 +100,16 @@ p{
 .menu-btn > i{
   color: var(--primary-color);
 }
+
+.menu-icon{
+  animation: fadeIn 1s linear;
+} 
+
+@keyframes fadeIn {
+  from{
+    opacity: 0.5;
+  }
+  to{
+    opacity: 1;
+  }
+}

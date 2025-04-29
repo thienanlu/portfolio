@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <div className='menu-btn' onClick={renderNavBar}>
-        <i className='fa-solid fa-bars'></i>
+          {isClosed ? <i className='fa-solid fa-bars menu-icon'></i> : <i className='fa-solid fa-xmark menu-icon'></i>}
       </div>
        <Slider />
        <About />
