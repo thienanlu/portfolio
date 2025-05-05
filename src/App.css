@@ -5,6 +5,10 @@
    --secondary-color: #98D2C0;
 }
 
+.app{
+  position: relative;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -87,7 +91,7 @@ p{
 
 .menu-btn{
   cursor: pointer;
-  z-index: 2;
+  z-index: 5;
   position: fixed;
   top: 30px;
   right: 24px;
@@ -103,7 +107,7 @@ p{
 
 .menu-icon{
   animation: fadeIn 1s linear;
-} 
+}
 
 @keyframes fadeIn {
   from{

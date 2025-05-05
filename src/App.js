@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion } from "motion/react"
+import { AnimatePresence, motion } from "motion/react"
 
 // import components
 import Slider from './components/Slider';
@@ -10,6 +10,7 @@ import Experience from './components/Experience';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 // import css files
 import './App.css';
@@ -19,18 +20,16 @@ import './assets/css/responsive.css'
 function App() {
   const [isClosed, setIsClosed] = useState(true)
   const renderNavBar = () => {
-      if(isClosed){
-        setIsClosed(false)
-      }
-      if(!isClosed){
-        setIsClosed(true)
-      }
+      setIsClosed(!isClosed)
   }
   return (
     <div className="App">
       <div className='menu-btn' onClick={renderNavBar}>
           {isClosed ? <i className='fa-solid fa-bars menu-icon'></i> : <i className='fa-solid fa-xmark menu-icon'></i>}
       </div>
+      <AnimatePresence className="navbar-main">
+        {isClosed ? null : <Navbar />}
+      </AnimatePresence>
        <Slider />
        <About />
        <Skills />
@@ -39,7 +38,6 @@ function App() {
        <Project />
        <Contact />
        <Footer />
-       {isClosed ? <div className=''>nothing</div> : <h3>navbar</h3>}
     </div>
   );
 }

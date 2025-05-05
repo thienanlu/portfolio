@@ -1,9 +1,11 @@
 /* portrait mobile */
-@media only screen and (max-width: 600px) {
-    .about-item-wrapper > .col-lg-3:nth-child(2) .about-item{
+@media only screen and (max-width: 580px) {
+    /* about section */
+    .about-item{
         margin-right: 0;
     }
 
+    /* education section */
     .certification-item{
         justify-content: center;
     }
@@ -27,11 +29,45 @@
         text-align: center;
     }
 
-    
+    /* experience section */
+    .experience-wrapper::before{
+        display: none;
+    }
+
+    .experience-item-content{
+        width: 100%;
+    }
+
+    .experience-item-content a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .experience-item-icon{
+        display: none;
+    }
+
+    /* contact section */
+    .contact-link{
+        margin-top: 48px;
+    }
+
+    /* footer */
+    .footer-logo{
+        text-align: center;
+    }
+
+    .social-media{
+        justify-content: center;
+    }
+
+    .copyright p{
+        font-size: 20px;
+    }
 }
 
 /* landscape mobile and portrait tablet */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 580px) and (max-width: 768px) {
     .about-item-wrapper > .col-lg-3:nth-child(2) .about-item{
         margin-right: 0;
     }
@@ -59,7 +95,27 @@
         text-align: center;
     }
 
-    /* .experience-wrapper::before{
-        display: none;
-    } */
+    /* project section */
+    .project-item-name{
+        font-size: 24px;
+    }
+
+    /* experience section */
+    .experience-item-content{
+        width: 90%;
+    }
+
+    /* contact section */
+    .contact-link{
+        margin-top: 48px;
+    }
+
+    /* footer */
+    .footer-logo{
+        text-align: center;
+    }
+
+    .social-media{
+        justify-content: center;
+    }
 }
