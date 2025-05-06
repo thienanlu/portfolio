@@ -13,7 +13,7 @@ function About(){
                     <div className="col-lg-7 col-sm-12">
                         <p className="about-desc">
                         Hi! I'm Thien An, a passionate Front-end developer and UX/UI designer based in Ho Chi Minh City, Vietnam. 
-                        With a strong foundation in HTML, CSS, and Javascript with modern frameworks like ReactJs and Bootstrap 4. I can bring your ideas and designs to life while ensuring functionality and responsiveness and also follow crucial UX design principles. 
+                        With a strong foundation in HTML, CSS, and Javascript with modern frameworks like ReactJs and Bootstrap 4 and over a year of experience. I can bring your ideas and designs to life while ensuring functionality and responsiveness and also follow crucial UX design principles. 
                         </p>
                         <p className="about-desc">
                         My competencies were validated by a Meta Front-End Developer Professional Certificate and I was equipped with good English 

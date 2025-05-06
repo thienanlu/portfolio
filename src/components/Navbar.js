@@ -1,10 +1,15 @@
-import { animate, motion } from "motion/react"
+import { motion } from "motion/react"
 
 // import css files
 import '../assets/css/navbar.css'
 
-function Navbar(){
-    const navbar = document.querySelector('.navbar');
+function Navbar(props){
+    const aboutSection = document.querySelector('.about')
+    const skillSection = document.querySelector('.skill')
+    const educationSection = document.querySelector('.education')
+    const experienceSection = document.querySelector('.experience')
+    const projectSection = document.querySelector('.project')
+    const contactSection = document.querySelector('.contact')
 
     return(
         <motion.div
@@ -20,12 +25,12 @@ function Navbar(){
             transition={{ ease: "easeIn", duration: 0.6 }}
             className="navbar">
                 <ul>
-                    <li className="nav-item">About me</li>
-                    <li className="nav-item">My skills</li>
-                    <li className="nav-item">My education</li>
-                    <li className="nav-item">Work experience</li>
-                    <li className="nav-item">Projects</li>
-                    <li className="nav-item">Contact</li>
+                    <li className="nav-item" onClick={() => {aboutSection.scrollIntoView(); props.onClick()}}>About me</li>
+                    <li className="nav-item" onClick={() => {skillSection.scrollIntoView(); props.onClick()}}>My skills</li>
+                    <li className="nav-item" onClick={() => {educationSection.scrollIntoView(); props.onClick()}}>My education</li>
+                    <li className="nav-item" onClick={() => {experienceSection.scrollIntoView(); props.onClick()}}>Work experience</li>
+                    <li className="nav-item" onClick={() => {projectSection.scrollIntoView(); props.onClick()}}>Projects</li>
+                    <li className="nav-item" onClick={() => {contactSection.scrollIntoView(); props.onClick()}}>Contact - Hire me</li>
                 </ul>
             </motion.div>
         </motion.div>

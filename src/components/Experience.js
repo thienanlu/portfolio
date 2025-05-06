@@ -9,7 +9,7 @@ function Experience(){
         <div className="experience app-item">
             <h3 className="app-item-title">Work Experience</h3>
             <div className="experience-wrapper">
-                <ExperienceItem name="Front-end Developer - UX/UI Designer | Lu Vietnam" time="December 2024 - April 2025" 
+                <ExperienceItem name="Front-end Developer - UX/UI Designer | Lu Vietnam" time="December 2024 - May 2025" 
                 role1=" Designing responsive and user-centric UX/UI on Figma" 
                 role2="Developing website using core technologies: HTML - CSS - JS and libraries: ReactJS and Bootstrap. "
                 role3="SEO for website"

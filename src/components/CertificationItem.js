@@ -8,8 +8,8 @@ function CertificationItem(props){
                 <h3 className="certification-name">{props.name}</h3>
                 {props.haveScore ? <p className="certification-score">{props.score}</p> : null}
                 <p>{props.desc}</p>
-                <ButtonComponent 
-                text="View Certification on Credly" link={props.link}/>
+                {props.haveBtn ? <ButtonComponent 
+                text="View Certification on Credly" link={props.link}/> : null}
             </div>
         </div>
     )

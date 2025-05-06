@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 function Footer(){
 
     var thisyear = new Date().getFullYear()
-    console.log(thisyear)
     return(
         <section className="footer">
             <div className="container-fluid footer-wrapper">
