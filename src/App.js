@@ -29,6 +29,7 @@ function App() {
   }
 
   return (
+    <>
     <div className="App">
       <div className='menu-btn' onClick={renderNavBar}>
           {isClosed ? <i className='fa-solid fa-bars menu-icon'></i> : <i className='fa-solid fa-xmark menu-icon'></i>}
@@ -45,6 +46,7 @@ function App() {
        <Contact />
        <Footer />
     </div>
+    </>
   );
 }
 
